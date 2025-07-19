@@ -1,0 +1,17 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: config-service
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/HaaaamBurger/configs.git
+          username: HaaaamBurger
+          password: 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
+          clone-on-start: true
+          default-label: master
