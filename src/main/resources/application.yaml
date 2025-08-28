@@ -3,14 +3,14 @@ server:
 
 spring:
   application:
-    name: config-service
+    name: config-server
   profiles:
     active: git
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/HaaaamBurger/configs.git
+          uri: https://github.com/vendo-marketplace/configs
           username: HaaaamBurger
           password: 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
           clone-on-start: true
