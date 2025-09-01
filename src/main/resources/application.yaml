@@ -1,17 +1,15 @@
 server:
-  port: 8088
+  port: ${SERVER_PORT}
 
 spring:
   application:
     name: config-server
-  profiles:
-    active: git
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/vendo-marketplace/configs
-          username: HaaaamBurger
-          password: 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
+          uri: ${GIT_CONFIGS_URL}
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
           clone-on-start: true
           default-label: master
