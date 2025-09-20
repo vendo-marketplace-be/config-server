@@ -13,3 +13,4 @@ spring:
           password: ${GIT_PASSWORD}
           clone-on-start: true
           default-label: master
+          search-paths: '**'
